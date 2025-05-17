@@ -1,0 +1,2 @@
+# forest-db
+`forest-db` is my first attempt at building a database from scratch. I used databases before without fully understanding how they worked, and I didn’t like treating them as a black box. This project is my way of learning and demystifying the internal principles of how databases function by implementing one myself.
