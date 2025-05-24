@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Iinclude
 TARGET = forest-db
 
-SRCS = db.c
+SRCS = db.c $(wildcard tokenizer/*.c)
 OBJS = $(SRCS:.c=.o)
 
 all: $(TARGET)
@@ -14,4 +14,4 @@ $(TARGET): $(OBJS)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f *.o $(TARGET)
+	rm -f *.o tokenizer/*.o $(TARGET)
